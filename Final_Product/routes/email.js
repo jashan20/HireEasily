@@ -4,13 +4,13 @@ const nodemailer = require("nodemailer");
     const transporter = await nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user:"karthikbruno77@gmail.com",
-        pass:"xmfchxmgomrhdrda",
+        user:"XXXXXXXXXXXXX@gmail.com",
+        pass:"XXXXXXXXXXXXX",
       },
     });
     // eslint-disable-next-line no-return-await
     return await transporter.sendMail({
-      from: "karthikbruno77@gmail.com",
+      from: "XXXXXXXXXXXXX@gmail.com",
       to: `${to}`,
       subject: `${subject}`,
       html: `${text}`,
